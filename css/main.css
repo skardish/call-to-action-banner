@@ -11,24 +11,38 @@ body {
 }
 
 .banner {
-
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .img-flex {
-
+  display: block;
+  width: 100%;
 }
 
 .circle {
-
+ float: left;
+ width: 25%;
 }
 
 .banner-content {
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  max-width: 50em;
 }
 
 h2 {
+  display: inline;
   font-size: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
+  line-height: 1.4em;
+  text-align: left;
 }
 
 p {
@@ -36,7 +50,20 @@ p {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.btn btn-big {
+.btn {
   font-size: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: .75rem;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+.btn-big {
+
 }
